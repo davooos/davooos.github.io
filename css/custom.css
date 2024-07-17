@@ -22,27 +22,16 @@ h2 {
     font-size: 20px;
     white-space: nowrap;
     overflow: hidden;
-    animation: typewriter 5s steps(20) infinite alternate, blink 800ms steps(20) infinite normal;
-    border-right: 5px solid black;
+    animation: typewriter 5s steps(50) infinite alternate, blink 800ms steps(50) infinite normal;
+    border-right: 3px solid black;
 }
 
-@media (min-width: 1200px) {
-    h2 {
-        font-size: 24px; /* Slightly larger */
-    }
-}
-
-/* Medium screens */
-@media (min-width: 768px) and (max-width: 1199px) {
-    h2 {
-        font-size: 18px;
-    }
-}
-
-/* Small screens */
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
     h2 {
         font-size: 16px;
+        animation: none;
+        white-space: wrap;
+        border-right: none;
     }
 }
 
