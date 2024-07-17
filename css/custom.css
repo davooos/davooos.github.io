@@ -1,0 +1,69 @@
+#portrait {
+    height: auto;
+    width: 20vw;
+}
+
+.jumbotron {
+    background-color: rgba(189, 189, 189, 0.31);
+    padding: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    font-family: 'Courier New', monospace;
+}
+
+body {
+    background-image: url("../IMG_4296.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+}
+
+h2 {
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 5s steps(20) infinite alternate, blink 800ms steps(20) infinite normal;
+    border-right: 5px solid black;
+}
+
+@media (min-width: 1200px) {
+    h2 {
+        font-size: 24px; /* Slightly larger */
+    }
+}
+
+/* Medium screens */
+@media (min-width: 768px) and (max-width: 1199px) {
+    h2 {
+        font-size: 18px;
+    }
+}
+
+/* Small screens */
+@media (max-width: 767px) {
+    h2 {
+        font-size: 16px;
+    }
+}
+
+
+@keyframes typewriter {
+    0% {
+        width: 0%;
+    }
+    90% {
+        width: 100%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    0%, 100% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
+}
