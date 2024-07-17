@@ -7,7 +7,7 @@
     background-color: rgba(189, 189, 189, 0.31);
     padding: 15px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    font-family: 'Courier New', monospace;
+    width: 100%;
 }
 
 body {
@@ -16,14 +16,15 @@ body {
     width: 100vw;
     background-size: cover;
     background-position: center;
+    font-family: 'Courier New', monospace;
 }
 
 h2 {
     font-size: 20px;
     white-space: nowrap;
     overflow: hidden;
-    animation: typewriter 5s steps(50) infinite alternate, blink 800ms steps(50) infinite normal;
-    border-right: 3px solid black;
+    animation: write 5s steps(50) infinite alternate;
+    border-right: 2px solid black;
 }
 
 @media (max-width: 1199px) {
@@ -36,23 +37,26 @@ h2 {
 }
 
 
-@keyframes typewriter {
+@keyframes write {
     0% {
         width: 0%;
     }
     90% {
-        width: 100%;
+        width: 77%;
     }
     100% {
-        width: 100%;
+        width: 77%;
     }
 }
 
-@keyframes blink {
-    0%, 100% {
-        border-color: transparent;
-    }
-    50% {
-        border-color: black;
-    }
+h3 {
+    background-color: rgba(189, 189, 189, 0.31);
+    padding: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#summary {
+    width: 70vw;
 }
