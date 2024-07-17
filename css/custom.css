@@ -10,12 +10,18 @@
     width: 100%;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     background-image: linear-gradient(green, teal, blue, blueviolet, violet);
     height: 100vh;
     width: 100vw;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     font-family: 'Courier New', monospace;
     color: white;
 }
