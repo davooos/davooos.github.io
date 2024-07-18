@@ -1,15 +1,3 @@
-#portrait {
-    height: auto;
-    width: 20vw;
-}
-
-.jumbotron {
-    background-color: rgba(189, 189, 189, 0.25);
-    padding: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    width: 100%;
-}
-
 html, body {
     width: 100%;
     margin: 0;
@@ -18,7 +6,7 @@ html, body {
 body {
     min-height: 100vh;
     height: auto;
-    background-image: linear-gradient(to bottom, green, teal, blue, blueviolet, violet, darkviolet);
+    background-color: #353d46;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -26,12 +14,17 @@ body {
     color: white;
 }
 
-h2 {
+h3 {
     font-size: 20px;
+    text-align: center;
+}
+
+h2 {
     white-space: nowrap;
     overflow: hidden;
     animation: write 5s steps(50) infinite alternate;
     border-right: 2px solid white;
+    font-size: 22px;
 }
 
 @media (max-width: 1199px) {
@@ -56,14 +49,42 @@ h2 {
     }
 }
 
-h3 {
+b {
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+.row {
     background-color: rgba(189, 189, 189, 0.25);
     padding: 15px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    margin: 15px;
+}
+
+#portrait {
+    height: auto;
+    width: 20vw;
+}
+
+ul {
     font-size: 20px;
 }
 
-#summary {
-    width: 70vw;
+.scaled {
+    max-width: 50%;
+    height: auto;
+}
+
+footer {
+    text-align: start;
+    align-content: center;
+    background-color: rgba(189, 189, 189, 0.25);
+    height: 50px;
+}
+
+main {
+    margin-top: 100px;
 }

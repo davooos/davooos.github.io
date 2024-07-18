@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio</title>
+    <title>Projects</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/custom.css">
     <script src="js/bootstrap.bundle.js"></script>
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <a class="navbar-brand ms-3" style="font-family: Arial Black,serif">DS</a>
         <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -31,26 +31,88 @@
     </nav>
 </header>
 <main class="main">
-    <div class="container mt-5" id="summary">
+    <div class="container mt-5 mb-5">
         <div class="col justify-content-center">
             <div class="row">
                 <h3>
-                    PROJECT 1
+                    <b>Delivery Management Portal</b><br>
                 </h3>
+                <ul>
+                    <li>Built on Django</li>
+                    <li>PostgreSQL database</li>
+                    <li>HERE API for delivery route optimization</li>
+                    <li>Bootstrap and jQuery Frameworks</li>
+                    <li>Modular Calendar based on Fullcalendar</li>
+                </ul>
+                <div class="col">
+                    <div class="row">
+                        <img src="media/route.png" alt="Delivery Routing" class="img-fluid">
+                    </div>
+                    <div class="row">
+                        <img src="media/calendar.png" alt="Calendar" class="img-fluid">
+                    </div>
+                </div>
             </div>
             <div class="row">
                 <h3>
-                    PROJECT 2
+                    <b>Web Based Live TV Menu</b><br>
                 </h3>
+                <ul>
+                    <li>Static HTML/CSS/Javascript</li>
+                    <li>PostgreSQL database</li>
+                    <li>Flask API</li>
+                    <li>Automatic product categorization</li>
+                </ul>
+                <div class="col">
+                    <div class="row">
+                        <div class="embed-responsive embed-responsive-16by9 d-flex justify-content-center">
+                            <video src="media/menu.mov" autoplay muted playsinline loop class="embed-responsive-item w-100 h-auto m-5">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="row">
                 <h3>
-                    PROJECT 3
+                    <b>Offroad Rover</b><br>
                 </h3>
+                <ul>
+                    <li>ESP32-S2 controlled with TB6612 drivers</li>
+                    <li>Communication over ESP32 access point to a browser and coded with C</li>
+                    <li>Speed and direction control over webserver</li>
+                </ul>
+                <div class="col">
+                    <div class="row">
+                        <img src="media/rover.png" alt="Photo of Rover" class="img-fluid">
+                    </div>
+                    <div class="row">
+                        <img src="media/roverapp.png" alt="Screenshot of rover webapp" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h3>
+                    <b>Spellchecker</b><br>
+                </h3>
+                <ul>
+                    <li>Uses dynamic programming to determine most similar word</li>
+                    <li>Loads dictionary into hashset and uses hashmap to compare edit distances</li>
+                    <li>Coded with Java</li>
+                </ul>
+                <div class="col">
+                    <div class="row">
+                        <img src="media/spellcheck.png" alt="Spellcheck Program" class="img-fluid">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </main>
-
+<footer class="footer">
+    <div class="container">
+        <span class="text-light">Copyright © 2024 Davis Stryer. All Rights Reserved</span>
+    </div>
+</footer>
 </body>
 </html>

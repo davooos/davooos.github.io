@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio</title>
+    <title>About Me</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/custom.css">
     <script src="js/bootstrap.bundle.js"></script>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand ms-3" style="font-family: Arial Black,serif">DS</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand ms-3" style="font-family: sans-serif,serif; font-weight: bold;">DS</a>
             <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -31,8 +31,8 @@
         </nav>
     </header>
     <main class="main">
-        <div class="jumbotron">
-            <div class="container">
+        <div class="container mt-5 mb-5">
+            <div class="col justify-content-center">
                 <div class="row">
                     <div class="col align-self-center">
                         <h1 class="display-3 mt-3">Davis Stryer</h1>
@@ -40,23 +40,41 @@
                         <h2>Software Developer for R&E Distributing</h2>
                     </div>
                     <div class="col align-self-center">
-                        <img src="portrait.jpg" alt="Davis Stryer" class="img-fluid" id="portrait">
+                        <img src="media/portrait.jpg" alt="Davis Stryer" class="img-fluid" id="portrait">
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="container mt-5 mb-5" id="summary">
-            <div class="row justify-content-center">
-                <div class="col">
+                <div class="row align-self-start">
                     <h3>
+                        <b>About Me</b><br>
                         I am a junior at Montana State University studying for a Bachelor of Science in Computer Science.
                         My work for R&E Distributing has composed of full stack web development, building API's, and creating
                         databases. I am proficient in Python, Java, C, as well as HTML, Javascript, and CSS. I use Bootstrap and Django
                         frequently in my projects.
                     </h3>
                 </div>
+                <div class="row">
+                    <h3>
+                        <b>Coursework</b><br>
+                    </h3>
+                    <ul>
+                        <li>Data Structures And Algorithms (Java)</li>
+                        <li>Computer Networks</li>
+                        <li>User Interface Design</li>
+                        <li>Databases</li>
+                        <li>Web Development</li>
+                        <li>C Programming (Git and VIM)</li>
+                        <li>Engineering Design</li>
+                        <li>Discrete Structures</li>
+                        <li>Data (Python)</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <span class="text-light">Copyright © 2024 Davis Stryer. All Rights Reserved</span>
+        </div>
+    </footer>
 </body>
 </html>
